@@ -3,8 +3,16 @@ let positionY
 let speedX 
 let speedY
 
-// Sets ball size
+// Ball radius
 let radius
+
+// Animation sound clip
+// let sound
+
+// function preload() {
+    // sound = loadSound("drop.mp3")
+// }
+
 
 function setup() {
     // Sets up a canvas spanning the entire window
@@ -37,6 +45,7 @@ function draw() {
     // Reverses position when touching the egdes of the window
     if (positionX > windowWidth - radius || positionX < radius) {
         speedX = speedX * -1
+        // sound.play()
     }
     if (positionY > windowHeight - radius || positionY < radius) {
         speedY = speedY * -1
