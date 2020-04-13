@@ -7,11 +7,11 @@ let speedY
 let radius
 
 // Animation sound clip
-// let sound
+let sound
 
-// function preload() {
-    // sound = loadSound("drop.mp3")
-// }
+function preload() {
+    sound = loadSound("drop.mp3")
+}
 
 
 function setup() {
@@ -45,10 +45,11 @@ function draw() {
     // Reverses position when touching the egdes of the window
     if (positionX > windowWidth - radius || positionX < radius) {
         speedX = speedX * -1
-        // sound.play()
+        sound.play()
     }
     if (positionY > windowHeight - radius || positionY < radius) {
         speedY = speedY * -1
+        sound.play()
     }
 
     // Modulates positionX between left edge (radius) and right edge (windowWidth - radius)

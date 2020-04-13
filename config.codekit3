@@ -50,28 +50,8 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/p5.sound.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/p5.sound.min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/p5Sound.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/p5Sound-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
 	"\/style.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
@@ -1850,7 +1830,7 @@
 		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*-min.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -1858,7 +1838,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsGIF": {
@@ -1895,7 +1875,7 @@
 		"quality": 100
 		},
 	"languageDefaultsJS": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*-min.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
