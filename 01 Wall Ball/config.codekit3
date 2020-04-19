@@ -16,16 +16,6 @@
 		"oAP": "\/.gitattributes",
 		"oF": 0
 		},
-	"\/app-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/app-min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
 	"\/app.js": {
 		"ft": 64,
 		"ma": 0,
