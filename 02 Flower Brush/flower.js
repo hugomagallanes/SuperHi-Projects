@@ -4,13 +4,17 @@ class Flower {
     // Assign parameters to variables x and y
     this.x = x;
     this.y = y;
-    this.hue = hue;
+    this.hue = hue ;
     this.midSize = size;
     // this.alpha = 100
     
     // Petals
-    this.numOfPetals = random(5,10)
-    this.petalDistance = size - 6
+    this.numOfPetals = random(7,20)
+    this.petalDistance = size / 2 + random(0,10)
+
+    // Animation
+    this.rotation = 0
+    this.rotationSpeed = random(-0.003, 0.003)
 
   }
 
@@ -25,12 +29,17 @@ class Flower {
     for (let i = 0; i < this.numOfPetals; i++) {
 
         // Calculates angles based on i
-        let angle = TWO_PI * i / this.numOfPetals
+        let angle = TWO_PI * i / this.numOfPetals + this.rotation
 
-        let petalX = this.petalDistance * cos(angle)
-        let petalY = this.petalDistance * sin(angle)
+        // let petalX = this.petalDistance * cos(angle)
+        // let petalY = this.petalDistance * sin(angle)
 
-        circle(this.x + petalX, this.y + petalY, 10)
+        let branch = createVector(this.petalDistance, 0)
+        branch.rotate(angle)
+        circle(this.x + branch.x, this.y + branch.y, 10)
+
+      this.rotation = this.rotation + this.rotationSpeed
+
     }
 
     // Fade draw each time this function rans
