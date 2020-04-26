@@ -18,14 +18,14 @@ function setup() {
 	noiseLevel = 0.003;
 	density = 10;
 
-	// totalX = windowWidth;
-	// totalY = windowHeight;
-	totalX = 100;
-	totalY = 100;
+	totalX = windowWidth;
+	totalY = windowHeight;
+	// totalX = 100;
+	// totalY = 100;
 	// colorMode(HSL, 100);
 
-	let colorA = color("#4B0082");
-	let colorB = color("LIGHTBLUE");
+	let colorA = color("#cc2b5e");
+	let colorB = color("#753a88");
 
 	for (let x = 0; x < totalX; x++) {
 		for (let y = 0; y < totalY; y++) {
